@@ -19,6 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/DjangoREST" />
   </component>
   <component name="ProjectId" id="2GGMQYFmpx1Wg4kGBakvR8amkdK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -73,11 +74,22 @@
       <workItem from="1666010453684" duration="2546000" />
       <workItem from="1666080172186" duration="1866000" />
       <workItem from="1666084974320" duration="10000" />
-      <workItem from="1666106705810" duration="14669000" />
+      <workItem from="1666106705810" duration="15062000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
