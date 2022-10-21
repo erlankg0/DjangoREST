@@ -1,11 +1,13 @@
+from django.contrib.auth.models import User
 from django.http import Http404
+from rest_framework import generics
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from snippets.models import Snippet
-from snippets.serializers import SnippetSerializer
+from snippets.serializers import SnippetSerializer, UserSerializer
 
 
 class SnippetList(APIView):
@@ -102,6 +104,7 @@ def snippet_detail(request, pk, format=None):
         snippet.delete()
         return Response(status.HTTP_400_BAD_REQUEST)
 
+
 # @csrf_exempt
 # def snippet_list(request):
 #     """
@@ -145,3 +148,13 @@ def snippet_detail(request, pk, format=None):
 #     elif request.method == "DELETE":
 #         snippet.delete()
 #         return HttpResponse(status=204)
+
+
+class UserList(generics.ListAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+class UserDetail(generics.RetrieveAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

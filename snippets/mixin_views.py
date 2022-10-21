@@ -32,3 +32,11 @@ class SnippetDetails(mixins.RetrieveModelMixin,
 
     def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
+
+
+#  class ListModelMixin
+
+
+class SnippetList(generics.CreateAPIView):
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
